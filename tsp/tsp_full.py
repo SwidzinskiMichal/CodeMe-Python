@@ -26,19 +26,13 @@ class Traveling_Merchant:
         self.matrix = []
 
     def fill_matrix(self):
-        file_handler = open("f:/Users/Admin/PycharmProjects/TWP-Matrix.txt", "r")
+        file_handler = open("tsp_matrix", "r")
         self.matrix = []
         for line in file_handler:
             clean_line = line.strip()
             clean_line_list = clean_line.split()
             self.matrix.append(clean_line_list)
-        print(self.matrix)
         file_handler.close()
-
-    def repeats(self, elements):
-        s = set(elements)
-        lenght = len(elements) == len(s)
-        return lenght
 
     def get_permutation(self, number_string):
         if len(number_string) == 1:
@@ -66,7 +60,7 @@ class Traveling_Merchant:
 
     def clean_paths(self):
         for m in self.temp_list_paths:
-            if self.repeats(m) == True and m[0] == 1:
+            if m[0] == 1:
                 self.list_paths.append(m)
 
     def fill_last_point(self):
