@@ -26,7 +26,7 @@ class Traveling_Merchant:
         self.matrix = []
 
     def fill_matrix(self):
-        file_handler = open("f:/Users/Admin/PycharmProjects/TWP-Matrix.txt", "r")
+        file_handler = open("tsp_matrix", "r")
         self.matrix = []
         for line in file_handler:
             clean_line = line.strip()
