@@ -1,5 +1,5 @@
 # Code Me Python
-- Excersises from the programming course.
+- Excersises from the programming course CodeMe.
 ## Description
 - A set of excersises from the programming course CodeMe Python along the final project TSP (traveling salesman problem).
 ### Dependencies
