@@ -3,7 +3,9 @@ import pygame
 import math
 from queue import PriorityQueue
 
+
 SIZE = 800  # the parameters of the window that will be displayed
+pygame.init()
 WIN = pygame.display.set_mode((SIZE, SIZE))
 pygame.display.set_caption("Pathfinding")
 
